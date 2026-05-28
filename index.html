@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Scientific Calculator | Kartik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="calculator">
+    <div class="calc-header">
+        <div class="title-area">
+            <span class="calc-emoji">🧮</span>
+            <span class="title-text">Scientific Calci</span>
+        </div>
+        <div class="mode-switch" id="modeToggle">
+            <span class="mode-icon" id="modeIcon">🌞</span>
+            <span class="mode-text" id="modeLabel">Light</span>
+        </div>
+    </div>
+
+    <div class="display">
+        <div class="expression" id="expressionDisplay"></div>
+        <div class="current-input" id="resultDisplay">0</div>
+    </div>
+
+    <div class="buttons">
+        <button class="btn inv-btn" id="invToggleBtn">INV</button>
+        <button class="btn fn-btn" data-func="sin">sin</button>
+        <button class="btn fn-btn" data-func="cos">cos</button>
+        <button class="btn fn-btn" data-func="tan">tan</button>
+        <button class="btn fn-btn" data-func="ln">ln</button>
+
+        <button class="btn fn-btn" data-func="sqrt">√</button>
+        <button class="btn fn-btn" data-func="square">x²</button>
+        <button class="btn fn-btn" data-func="cube">x³</button>
+        <button class="btn fn-btn" data-func="log">log₁₀</button>
+        <button class="btn fn-btn" data-func="exp">eˣ</button>
+
+        <button class="btn fn-btn" id="invSinBtn" data-inv-func="asin">sin⁻¹</button>
+        <button class="btn fn-btn" id="invCosBtn" data-inv-func="acos">cos⁻¹</button>
+        <button class="btn fn-btn" id="invTanBtn" data-inv-func="atan">tan⁻¹</button>
+        <button class="btn fn-btn" data-func="fact">n!</button>
+        <button class="btn fn-btn" data-func="percent">%</button>
+
+        <button class="btn" data-num="7">7</button>
+        <button class="btn" data-num="8">8</button>
+        <button class="btn" data-num="9">9</button>
+        <button class="btn op-btn" data-op="/">÷</button>
+        <button class="btn clear-btn" data-action="clear">AC</button>
+
+        <button class="btn" data-num="4">4</button>
+        <button class="btn" data-num="5">5</button>
+        <button class="btn" data-num="6">6</button>
+        <button class="btn op-btn" data-op="*">×</button>
+        <button class="btn" data-action="backspace">⌫</button>
+
+        <button class="btn" data-num="1">1</button>
+        <button class="btn" data-num="2">2</button>
+        <button class="btn" data-num="3">3</button>
+        <button class="btn op-btn" data-op="-">−</button>
+        <button class="btn fn-btn" data-func="pi">π</button>
+
+        <button class="btn span-2" data-num="0">0</button>
+        <button class="btn" data-num=".">.</button>
+        <button class="btn op-btn" data-op="+">+</button>
+        <button class="btn eq-btn" data-action="equal">=</button>
+    </div>
+
+    <div class="footer">
+        <div class="footer-text">Developed by <span>Kartik</span></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
